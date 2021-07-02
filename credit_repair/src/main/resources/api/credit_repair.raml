@@ -1,0 +1,49 @@
+#%RAML 1.0
+title: credit_repair
+/product:
+  get:
+    description: this is fetching are retriving the data
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include getresp.json
+  post:
+    description: this is inserting the data
+    body:
+      application/json:
+        example: !include postreq.json
+    responses:
+      201:
+        body:
+          application/json:
+            example: !include postresp.json
+  put:
+    description: this is sucessfully updating the data
+    body:
+      application/json:
+        example: !include putreq.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include putresp.json
+  delete:
+    description: deleting the data
+    body:
+      application/json:
+        example: !include deletereq.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include deleteresp.json
+
+                  
+          
+                              
+              
+          
+            
+                  
+        
